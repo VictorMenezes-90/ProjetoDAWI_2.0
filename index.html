@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abacate</title>
+        <link rel="icon" href="favicon.gif" sizes="32x32">
+
+        <style>
+
+            .MenuFlexBox{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                background-color: rgba(0,25,0,1);
+            }
+
+            .MenuAnchor{
+                /*border-style: solid;*/
+                /*background-color: aqua;*/
+                min-width: fit-content;
+                
+                align-items: center;
+                line-height: 28.5px;
+
+                margin-left: 10px;
+                height: 30px;
+
+                color: rgba(255,255,255,1);
+            }
+
+            .VideoFlexBox{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .VideoFlexBoxItem{
+                width: 100%;
+            }
+            table{
+                /*border: 1px;*/
+                text-align: center;
+                width: max-content;
+                background-color: rgba(0,0,0,1);
+            }
+
+            th{
+                
+                color: rgba(255,255,255,1);
+                background-color: rgba(0,75,0,1);
+            }
+
+            td{
+                
+                color: rgba(0,0,0,1);
+                background-color: rgba(150,255,150,1);
+            }
+
+            body{
+                background-color: rgba(215,255,215,1);
+            }
+
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+            }
+            
+            video{
+                align-self: center;
+                width: max-content;
+
+                vertical-align: middle;
+                border-style: solid;
+                border-width: 1px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+
+
+
+
+
+        </style>
+    </head>
+
+    <body style="margin: 0; padding: 0;">
+        <div class="MenuFlexBox">
+            <div class="MenuAnchor"><a href=#InfoNutri>Informações Nutricionais</a></div>
+            <div class="MenuAnchor"><a href=#Receitas>Receitas</a></div>
+            <div class="MenuAnchor"><a href=#Mapa>Mapa</a></div>
+            <div class="MenuAnchor" style="color: rgba(150,255,150,1); flex: 1 0; text-align: end; margin-right: 7.5px;"><i>
+                Saiba Mais em: <a href="https://pt.wikipedia.org/wiki/Abacate" target="_blank">https://pt.wikipedia.org/wiki/Abacate</a></i></div>
+        </div>
+
+        <div style="margin-left: 7.5px;">
+        <h1>ABACATE</h1>
+        <p align="Justify">O abacate é um fruto do abacateiro (<i>Persea americana</i>), uma árvore da família da laureáceas. Ele é classificado como uma <b>superfruta</b> devido ao seu perfil nutricional rico em gorduras monoinsaturadas (gorduras boas), fibras e antioxidantes.
+        <br><br>
+        <i><small>"O consumo regular de abacate está diretamente associado à melhoria da saúde cardiovascular e ao controle do colesterol LDL." — <b>Diretrizes de Nutrição Moderna</b></small></i>
+        <br><br>
+        No Brasil, o consumo varia muito de região para região. Enquanto em alguns locais ele é consumido estritamente como sobremesa (com açúcar e limão), em outros ele brilha em pratos salgados como o guacamole.
+        </p>
+
+        <h2 id="InfoNutri">Informações Nutricionais</h2>
+        <table border="0.1px">
+            <tr>
+            <th colspan="3" style="background-color: rgba(0,25,0,1)">Abacate (1 Unidade)</th>
+            </tr>
+
+            <tr>
+                <th>Nutriente</th>
+                <th>Quantidade</th>
+                <th>Benefício</th>
+            </tr>
+
+            <tr>
+                <td>Calorias</td>
+                <td>160 Kcal</td>
+                <td>Fornecimento de Energia Duradoura</td>
+            </tr>
+
+            <tr>
+                <td>Gorduras MonoInsaturadas</td>
+                <td>15g</td>
+                <td>Proteção do coração e controle do colesterol</td>
+            </tr>
+        
+            <tr>
+                <td>Fibras</td>
+                <td>7g</td>
+                <td>Melhora da digestão e saciedade prolongada</td>
+            </tr>
+            
+            <tr>
+                <td>Potássio</td>
+                <td>485mg</td>
+                <td>Controle da pressão arterial</td>
+            </tr>
+
+            <tr>
+                <td>Vitamina E</td>
+                <td>2mg</td>
+                <td>Ação antioxidante para pele e cabelo</td>
+            </tr>
+        </table>
+
+        <h2 id="Receitas">Receitas</h2>
+
+        <div class="VideoFlexBox">
+            <div class="VideoFlexBoxItem" style="width: 50%;"><video controls autoplay muted loop src="abacate-saudável.mp4" preload="metadata" style="width: 100%;"></video></div>
+        
+            <div class="VideoFlexBoxItem" style="border-style: solid;
+                border-width: 1px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;"> 
+                <ol type="1">
+                
+                    <li>Preparo do Guacamole:
+                
+                        <ul>   
+                            <li>Corte um abacate maduro ao meio, retire o caroço e faça cortes internos na diagonal e na diagonal inversa.</li>
+                            <li>Transfira o abacate para uma tigela e tempere com uma colher de chá de sal, uma pitada de pimenta-do-reino e o suco de meio limão. Misture até homogeneizar.</li>
+                            <li>Adicione um quarto de pimentão vermelho picado em cubinhos e misture novamente.</li>
+                        </ul>
+                    </li>
+
+                    <li>Preparo dos Acompanhamentos:
+                        <ul>   
+                            <li>Corte um pepino pequeno em rodelas finas.</li>
+                            <li>Pique dois ramos de salsinha.</li>
+                            <li>Corte um tomate maduro em rodelas.</li>
+                        </ul>
+                    </li>
+
+                    <li>Massa de Aveia:
+                        <ul>   
+                            <li>Em uma tigela pequena, misture 40g de aveia em flocos com um ovo inteiro até ficar homogêneo.</li>
+                        </ul>
+                    </li>
+
+                    <li>Cozimento e Montagem:
+                        <ul>   
+                            <li>Aqueça uma frigideira em fogo médio para baixo com um fio de óleo vegetal espalhado.</li>
+                            <li>Despeje metade da massa de aveia, espalhando para formar uma panqueca redonda; Frite por 3 minutos, vire e frite por mais 1 minuto.</li>
+                            <li>Para montar, coloque a massa, adicione o guacamole, duas rodelas de tomate, três rodelas de pepino e finalize com cebolinha (ou a salsinha picada anteriormente) antes de fechar a tortilha.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+
+        </div>
+        </div>
+
+    </body>
+</html>
