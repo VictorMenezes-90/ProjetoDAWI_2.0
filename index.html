@@ -2,41 +2,44 @@
 <html>
     <head>
         <title>Abacate</title>
-        <link rel="icon" href="Imagens/favicon.gif" sizes="32x32">
+        <link rel="icon" href="Imagens/favicon.png" sizes="32x32">
 
         <style>
 
             .MenuFlexBox{
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
-
+                height: 40px;
+                gap: 2.5px;
                 background-color: rgba(0,25,0,1);
             }
 
             .MenuAnchor{
-                /*border-style: solid;*/
+                border-style: solid;
+                border-width: 0.5px;
+                background-color: rgba(0,50,0,1);
+                border-color: rgba(0,100,0,1);
+                border-radius: 50px;
+                padding: 5px;
                 /*background-color: aqua;*/
                 min-width: fit-content;
-                
-                align-items: center;
-                line-height: 28.5px;
-
+                max-height: fit-content;
+                align-self: center;
                 margin-left: 10px;
-                height: 30px;
-
+                height: 50px;
                 color: rgba(255,255,255,1);
             }
 
             audio{
                 height: 30px;
-                opacity: 0.75;
+                width: 80%;
+                margin:0px;
+                margin-left: 10%;
             }
 
             .VideoFlexBox{
                 display: flex;
                 flex-direction: row;
-
                 height:fit-content;
             }
 
@@ -44,6 +47,7 @@
                 width: 100%;
                 height:auto
             }
+
             table{
                 /*border: 1px;*/
                 text-align: center;
@@ -52,13 +56,11 @@
             }
 
             th{
-                
                 color: rgba(255,255,255,1);
                 background-color: rgba(0,75,0,1);
             }
 
             td{
-                
                 color: rgba(0,0,0,1);
                 background-color: rgba(150,255,150,1);
             }
@@ -80,36 +82,35 @@
                 border-bottom-left-radius: 50px;
             }
 
-
-
-
-
         </style>
     </head>
 
     <body style="margin: 0; padding: 0;">
         <!-- Menu -->
         <div class="MenuFlexBox">
+            <div class="MenuAnchor" style="background-color: rgba(0,100,0,1); border-color: rgba(0,150,0,1); border-style: solid; border-width: 0.5px;"><a href="sorteio.html"><b>SORTEIO</b></a></div>
             <div class="MenuAnchor"><a href=#InfoNutri>Informações Nutricionais</a></div>
             <div class="MenuAnchor"><a href=#Receita>Receita</a></div>
-            <div class="MenuAnchor"><a href=#Mapa>Mapa</a></div>
-            <div class="MenuAnchor"><audio controls><source src="Imagens/Abacate-vovozinha.mp3" type="audio/mp3" ></audio></div>
-            <div class="MenuAnchor" style="color: rgba(150,255,150,1); flex: 1 0; text-align: end; margin-right: 7.5px;"><i>
+            <div class="MenuAnchor" style="color: rgba(150,255,150,1); flex: 0 0; text-align: end; margin-right: 7.5px;"><i>
                 Saiba Mais em: <a href="https://pt.wikipedia.org/wiki/Abacate" target="_blank">https://pt.wikipedia.org/wiki/Abacate</a></i></div>
         </div>
 
-        <div style="margin-left: 7.5px;">
-        
+        <!-- Corpo do Site -->
+        <div style="margin-left: 7.5px; margin-right: 7.5px;">
+        <!-- Conteúdo Principal -->
         <h1>ABACATE</h1>
+        <div>
         <p align="Justify">O abacate é um fruto do abacateiro (<i>Persea americana</i>), uma árvore da família da laureáceas. Ele é classificado como uma <b>superfruta</b> devido ao seu perfil nutricional rico em gorduras monoinsaturadas (gorduras boas), fibras e antioxidantes.
         <br><br>
         <i><small>"O consumo regular de abacate está diretamente associado à melhoria da saúde cardiovascular e ao controle do colesterol LDL." — <b>Diretrizes de Nutrição Moderna</b></small></i>
         <br><br>
         No Brasil, o consumo varia muito de região para região. Enquanto em alguns locais ele é consumido estritamente como sobremesa (com açúcar e limão), em outros ele brilha em pratos salgados como o guacamole.
         </p>
+        </div>
 
         <h2 id="InfoNutri">Informações Nutricionais</h2>
         <!-- Tabela -->
+        <div>
         <table border="0.1px">
             <tr>
             <th colspan="3" style="background-color: rgba(0,25,0,1)">Abacate (1 Unidade)</th>
@@ -151,10 +152,11 @@
                 <td>Ação antioxidante para pele e cabelo</td>
             </tr>
         </table>
+        </div>
 
         <h2 id="Receita">Receita: Tortilla de Abacate</h2>
-
-        <!-- Vídeo + Lista -->
+        <!-- Listas + Multimídia -->
+        <div>
         <div class="VideoFlexBox" style="border-style: solid;
                 border-width: 1px;
                 border-radius: 50px;">
@@ -162,7 +164,7 @@
                 <video 
                     controls 
                     src="Imagens/abacate-saudável.mp4" 
-                    preload="none" 
+                    preload="metadata" 
                     style="width: 100%;">
                 </video>
             </div>
@@ -206,15 +208,15 @@
                     </li>
                 </ol>
             </div>
+        </div>
 
+        <br><br>
+            <h2>Compilado Vovó Juju: Abacate</h2>
+            <audio controls><source src="Imagens/Abacate-vovozinha.mp3" type="audio/mp3" ></audio>
+
+            <p contenteditable="true">Quais outros memes sobre abacate você conhece? (Edite este texto aqui mesmo!)</p>   
+        </div>
 
         </div>
-        <br><br>
-        <!-- Mapa (iFrame) -->
-        <h2 id="Mapa">Mapa</h2>
-        <p> Abaixo está a localização de um dos maiores produtores de abacate do Brasil, a <b>Avocado Jaguacy</b>, localizada em Ituporanga, Santa Catarina. A região é conhecida por suas <mark>condições climáticas ideais para o cultivo de abacates</mark>, contribuindo significativamente para a produção nacional e exportação do fruto.
-        <br><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.1271770132257!2d-49.1433909247095!3d-22.2352529797334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6e9fdd1eff01%3A0x16168d223e6cdf01!2sAvocado%20Jaguacy!5e0!3m2!1spt-BR!2sbr!4v1780619969174!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </p>
     </body>
 </html>

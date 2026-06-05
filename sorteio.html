@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abacate</title>
+        <link rel="icon" href="Imagens/favicon.png" sizes="32x32">
+
+        <style>
+
+            .MenuFlexBox{
+                display: flex;
+                flex-direction: row;
+
+                height: 40px;
+                gap: 2.5px;
+
+                background-color: rgba(0,25,0,1);
+            }
+
+            .MenuAnchor{
+                border-style: solid;
+                border-width: 0.5px;
+                border-color: rgba(0,100,0,1);
+                border-radius: 50px;
+
+                padding: 5px;
+                max-width: fit-content;
+                max-height: fit-content;
+                align-self: center;
+                margin-left: 10px;
+
+                background-color: rgba(0,50,0,1);
+                color: rgba(255,255,255,1);
+            }
+
+            body{
+                background-color: rgba(215,255,215,1);
+            }
+
+            a{
+                text-decoration: none;
+                color: rgba(255, 255, 255, 1);
+            }
+
+            input{
+                width: 350px;
+                border-style: solid;
+                border-width: 0.5px;
+                padding: 10px;
+                border-radius: 50px;
+                text-align: center;
+            }
+
+            fieldset{
+                width: fit-content;
+                border-style: solid;
+                border-width: 2.5px;
+                border-color: rgba(0,100,0,1);
+                padding: 10px;
+                border-radius: 25px;
+                text-align: center;
+
+                background-color: rgba(100, 200, 100, 0.5);
+            }
+
+            label{
+                font-weight: bold;
+            }
+
+            textarea{
+                width: 350px;
+                border-style: solid;
+                border-width: 0.5px;
+                padding: 10px;
+                border-radius: 20px;
+                text-align:justify
+            }
+
+        </style>
+    </head>
+
+    <body style="margin: 0; padding: 0;">
+        <!-- Menu -->
+        <div class="MenuFlexBox">
+            <div class="MenuAnchor" style="background-color: rgba(0,100,0,1); border-color: rgba(0,150,0,1); border-style: solid; border-width: 0.5px;"><a href="index.html"><b>Página Inicial</b></a></div>
+            <div class="MenuAnchor"><a href=#Localizacao>Localização</a></div>
+            <div class="MenuAnchor"><a href=#Cadastro>Cadastro</a></div>
+        </div>
+
+        <!-- Corpo do Site -->
+        <div style="margin-left: 7.5px; margin-right: 7.5px;">
+        
+        <!-- Conteúdo Principal -->
+        <div>
+        <h1>Sorteio: Tour pela Avocado Jaguacy!</h1>
+        <p align="Justify">Ao preencher o formulário abaixo você estará concorrendo a um tour exclusivo pela <b>Avocado Jaguacy</b>, uma das maiores produtoras de abacate do Brasil, localizada em Bauru, São Paulo. O vencedor terá a oportunidade de conhecer as instalações da fazenda, aprender sobre o processo de cultivo e produção do abacate, além de desfrutar de uma degustação dos produtos frescos diretamente da fonte. Não perca essa chance única de se conectar com a natureza e descobrir os segredos por trás do delicioso abacate que chega à sua mesa!
+        </p>
+        </div>
+
+        <!-- Mapa (iFrame) -->
+        <div>
+        <h2 id="Localizacao">Localização</h2>
+        <p> Abaixo está a localização da <b>Avocado Jaguacy</b>, localizada em Bauru, São Paulo. A região é conhecida por suas <mark>condições climáticas ideais para o cultivo de abacates</mark>, contribuindo significativamente para a produção nacional e exportação do fruto.
+        <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.1271770132257!2d-49.1433909247095!3d-22.2352529797334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6e9fdd1eff01%3A0x16168d223e6cdf01!2sAvocado%20Jaguacy!5e0!3m2!1spt-BR!2sbr!4v1780619969174!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+        </div>
+
+        <!-- Formulário de Cadastro -->
+        <div>
+        <h2 id="Cadastro">Cadastro</h2>
+        <p>Para participar do sorteio, preencha o formulário abaixo:</p>
+        
+        <fieldset style="width: min-content;">
+        <legend><b>Formulário de Participação</b></legend>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <br>
+            <input 
+                    type="text" 
+                    id="nome" 
+                    name="nome"
+                    minlength="10"
+                    placeholder="José da Silva"
+                    required>
+            <br><br>
+            <label for="email">Email:</label>
+            <br>
+            <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    placeholder="abacate.123@email.com"
+                    required>
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <br>
+            <input 
+                    type="tel" 
+                    id="telefone" name="telefone"
+                    placeholder="19 12345-6789">
+            <br><br>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <br>
+            <input 
+                    type="date" 
+                    id="data_nascimento" 
+                    name="data_nascimento" 
+                    required>
+            <br><br>
+            <label for="mensagem">Mensagem (Opcional):</label>
+            <br>
+            <textarea 
+                    id="mensagem" 
+                    name="mensagem" 
+                    maxlength="500"
+                    style="width: 350px; height:100px">Ex: Diga sobre o que você mais gosta no abacate, compartilhe uma receita favorita, ou conte o que você mais gostaria de fazer se ganhar o sorteio.
+            </textarea>
+            <br><br>
+            <input type="submit" value="Enviar Dados" style="width:100%; margin: 0; border-color: rgba(0,50,0,1); background-color: rgba(0,150,0,1); color: rgba(255,255,255,1);">
+        </form>
+        </fieldset>
+
+        <p>Parabéns! Você acaba de se inscrever no sorteio para ganhar um tour exclusivo pela Avocado Jaguacy! Fique atento ao seu email e telefone, pois entraremos em contato caso seja o vencedor. <b>Boa sorte!</b></p>
+        </div>
+
+        </div>
+    </body>
+</html>
